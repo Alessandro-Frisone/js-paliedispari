@@ -35,7 +35,8 @@ if (verificaSomma(somma)) {
     alert("La somma dei numeri è dispari!");
 }    
 // 8 - Dichiariamo chi ha vinto.
-if (verificaSomma(somma) === sceltaUtente.toLowerCase()) {
+const utenteHaSceltoPari = (sceltaUtente.toLowerCase()==="pari")
+if (verificaSomma(somma) === utenteHaSceltoPari) {
     alert("Hai vinto!");
     } else {
         alert("Hai perso!");
