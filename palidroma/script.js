@@ -15,11 +15,12 @@ function reverseWord(userWord) {
 console.log(reverseWord(userWord));
 // 4 - Creare una funzione per capire se la parola inserita è palindroma
 function isPalindrome(userWord) {
-    let wordReverse = reverseWord(userWord);
+    const wordReverse = reverseWord(userWord);
     if (wordReverse === userWord) {
-        return true
-        } else
-        return false
+        return true;
+    } else {
+        return false;
+    }
 }
 // 5 - Mostrare un messaggio all'utente con il risultato
 if (isPalindrome(userWord)) {
