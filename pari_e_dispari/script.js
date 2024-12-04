@@ -15,4 +15,4 @@ function numeroComputer() {
     return numero;
     }
 // 4 - Stampo il numero generato per il computer
-alert("Il numero del computer è: ", numeroComputer(numero));
+alert("Il numero del computer è: " + numeroComputer());
