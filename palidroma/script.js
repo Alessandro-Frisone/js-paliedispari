@@ -17,11 +17,14 @@ console.log(reverseWord(userWord));
 function isPalindrome(userWord) {
     let wordReverse = reverseWord(userWord);
     if (wordReverse === userWord) {
-        return ("La parola inserita è palindroma");
+        return true
         } else
-        return ("La parola inserita non è palindroma");
+        return false
 }
 // 5 - Mostrare un messaggio all'utente con il risultato
-alert(isPalindrome(userWord));
-        
+if (isPalindrome(userWord)) {
+    alert("La parola è un palindromo!");
+} else {
+    alert("La parola non è un palindromo!");
+}    
 
