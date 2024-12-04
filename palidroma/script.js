@@ -22,7 +22,7 @@ function isPalindrome(userWord) {
         return false;
     }
 }
-// 5 - Mostrare un messaggio all'utente con il risultato
+// 5 - Mostro un messaggio all'utente con il risultato
 if (isPalindrome(userWord)) {
     alert("La parola è un palindromo!");
 } else {

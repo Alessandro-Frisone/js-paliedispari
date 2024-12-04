@@ -13,6 +13,30 @@ const numeroUtente = Number(prompt("Inserisci un numero da 1 a 5"));
 function numeroComputer() {
     const numero = Math.floor(Math.random() * 5) + 1;
     return numero;
-    }
+}
+const numero = numeroComputer();
 // 4 - Stampo il numero generato per il computer
-alert("Il numero del computer è: " + numeroComputer());
+alert("Il numero del computer è:  " + numero);
+// 5 - Sommiamo i due numeri
+const somma = numeroUtente + numero;
+alert("La somma dei due nuemeri è di: " + somma);
+// 6 - Creo una funzione che verifica se la somma è pari o dispari
+function verificaSomma(somma) {
+    if (somma % 2 == 0) {
+        return true;
+        } else {
+        return false;
+        }
+}
+// 7 - Mostro un messaggio all'utente con il risultato
+if (verificaSomma(somma)) {
+    alert("La somma dei numeri è pari!");
+} else {
+    alert("La somma dei numeri è dispari!");
+}    
+// 8 - Dichiariamo chi ha vinto.
+if (verificaSomma(somma) === sceltaUtente.toLowerCase()) {
+    alert("Hai vinto!");
+    } else {
+        alert("Hai perso!");
+}
